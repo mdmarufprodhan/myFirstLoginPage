@@ -14,7 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        // Check if user is already logged in
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
+        print(isUserLoggedIn);
+        if(!isUserLoggedIn){
+            print("Hit!!")
+            self.performSegue(withIdentifier: "DashBoardToLoginPage", sender: self);
+        }
+    }
+    
 
 }
 

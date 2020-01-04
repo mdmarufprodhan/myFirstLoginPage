@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A14D2223BA5FBB000E8A62 /* CreateNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A14D2123BA5FBB000E8A62 /* CreateNewAccountViewController.swift */; };
+		19A14D2423BA7107000E8A62 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A14D2323BA7107000E8A62 /* LoginPageViewController.swift */; };
+		19A14D2623BA7CAC000E8A62 /* ValidMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A14D2523BA7CAC000E8A62 /* ValidMobileNumberViewController.swift */; };
+		19A14D2823BA8652000E8A62 /* VerficationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A14D2723BA8652000E8A62 /* VerficationCodeViewController.swift */; };
 		19DD670A23B2283B00001B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD670923B2283B00001B05 /* AppDelegate.swift */; };
 		19DD670C23B2283B00001B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD670B23B2283B00001B05 /* ViewController.swift */; };
 		19DD670F23B2283B00001B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DD670D23B2283B00001B05 /* Main.storyboard */; };
@@ -34,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1907937B23B478BF00AB5AF1 /* LoginPage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginPage.entitlements; sourceTree = "<group>"; };
+		19A14D2123BA5FBB000E8A62 /* CreateNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAccountViewController.swift; sourceTree = "<group>"; };
+		19A14D2323BA7107000E8A62 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		19A14D2523BA7CAC000E8A62 /* ValidMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidMobileNumberViewController.swift; sourceTree = "<group>"; };
+		19A14D2723BA8652000E8A62 /* VerficationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerficationCodeViewController.swift; sourceTree = "<group>"; };
 		19DD670623B2283B00001B05 /* LoginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DD670923B2283B00001B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DD670B23B2283B00001B05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +106,17 @@
 		19DD670823B2283B00001B05 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				1907937B23B478BF00AB5AF1 /* LoginPage.entitlements */,
 				19DD670923B2283B00001B05 /* AppDelegate.swift */,
 				19DD670B23B2283B00001B05 /* ViewController.swift */,
 				19DD670D23B2283B00001B05 /* Main.storyboard */,
 				19DD671023B2283B00001B05 /* Assets.xcassets */,
 				19DD671223B2283B00001B05 /* LaunchScreen.storyboard */,
 				19DD671523B2283B00001B05 /* Info.plist */,
+				19A14D2123BA5FBB000E8A62 /* CreateNewAccountViewController.swift */,
+				19A14D2323BA7107000E8A62 /* LoginPageViewController.swift */,
+				19A14D2523BA7CAC000E8A62 /* ValidMobileNumberViewController.swift */,
+				19A14D2723BA8652000E8A62 /* VerficationCodeViewController.swift */,
 			);
 			path = LoginPage;
 			sourceTree = "<group>";
@@ -193,6 +207,11 @@
 				TargetAttributes = {
 					19DD670523B2283B00001B05 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					19DD671923B2283B00001B05 = {
 						CreatedOnToolsVersion = 10.0;
@@ -257,6 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DD670C23B2283B00001B05 /* ViewController.swift in Sources */,
+				19A14D2423BA7107000E8A62 /* LoginPageViewController.swift in Sources */,
+				19A14D2823BA8652000E8A62 /* VerficationCodeViewController.swift in Sources */,
+				19A14D2623BA7CAC000E8A62 /* ValidMobileNumberViewController.swift in Sources */,
+				19A14D2223BA5FBB000E8A62 /* CreateNewAccountViewController.swift in Sources */,
 				19DD670A23B2283B00001B05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K346988S9T;
 				INFOPLIST_FILE = LoginPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uap.LoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +475,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K346988S9T;
 				INFOPLIST_FILE = LoginPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uap.LoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
